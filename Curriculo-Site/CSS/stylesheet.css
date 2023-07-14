@@ -25,7 +25,7 @@
 body{
     background-color: var(--colorSecondary);
     display: grid;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 200px;
     grid-template-rows: auto 1fr;
@@ -54,6 +54,7 @@ main{
     grid-row: 2;
     border-top-right-radius: 50px;
     width: 100%;
+    overflow: hidden;
 }
 .btnTheme{
     position: absolute;
@@ -173,7 +174,6 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     gap: 20px;
 }
 main h3,h4{
@@ -204,13 +204,29 @@ main h3,h4{
 }
 .projectsContainer{
     background-color: var(--colorTerciary);
-    width: fit-content;
-    height: max-content;
+    max-width: 100%;
+    height: 100%;
+    /* display: flex; */
+    overflow: hidden;
+    position: relative;
+}
+.wrapper{
+    border: 10px solid aqua;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.sliderProject{
+    background-color: blueviolet;
     display: flex;
+    flex-flow:row nowrap;
+    overflow: auto;
 }
 .project{
-    width: 100px;
+    width: 400px;
     height: 100%;
     background-color: var(--colorSlider);
-    overflow: visible;
+    overflow: hidden;
+    object-fit: cover;
+    
 }
