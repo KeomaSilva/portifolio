@@ -1,5 +1,4 @@
   @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-  @import url('./mediaQuery.css');
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +40,7 @@ body{
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 220px;
     grid-template-rows: auto 1fr;
     transition: .3s;
 }
@@ -302,8 +301,6 @@ main h3,h4{
         margin-left: -400%;
     }
 }
-
-
 .inputNav:has(#project3:checked) ~ .sp{
     background-color: var(--colorSlider);
 }
@@ -403,5 +400,36 @@ main h3,h4{
     }
     .inputNav input[type="radio"]:checked{
         background-color: var(--colorPrimary);
+    }
+}
+@media (min-width: 900px){
+    body{
+        grid-template-columns: 1fr 300px;
+    }
+    aside{
+        border-top: 15px solid var(--colorPrimary);
+        grid-column: 2;
+        grid-row: 1/3;
+        display: grid;
+        grid-template-rows: 300px 1fr;
+    }
+    .picture{
+        width: 280px;
+        height: 290px;
+        border-radius: 0px 0px 50% 50%;
+        background-color: var(--colorTerciary);
+        box-shadow: 5px 5px 5px 0px rgb(0, 0, 0,.4);    
+    }
+    .picture img{
+        position: absolute;
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-47%);
+        box-shadow: 0px 0px 0px 5px var(--colorTerciary),
+                    0px 0px 0px 8px var(--colorPrimary),
+                    0px 0px 0px 10px var(--colorSecondary);
     }
 }
