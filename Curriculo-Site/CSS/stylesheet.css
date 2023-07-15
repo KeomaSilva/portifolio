@@ -13,14 +13,16 @@
     --colorSlider: #e7db36;
     --letterLight:#334347;
     --letterDark:#F0EBDD;
+    --colorIcon:#334347;
 }
-.dark{
+:root:has(#btnThemeChange:checked) {
     --colorPrimary:#334347;
     --colorSecondary:#F0EBDD;
     --colorTerciary:#C1AC71;
     --colorSlider: #334347;
     --letterLight:#F0EBDD;
     --letterDark:#334347;
+    --colorIcon:#334347;
 }
 body{
     background-color: var(--colorSecondary);
@@ -97,10 +99,10 @@ main{
     box-shadow: inset 15px -4px 0px 15px #fff000;
     transition: .5s;
 }
-input:checked + .slider {
+#btnThemeChange:checked + .slider {
     background-color: var(--colorPrimary);
 }
-input:checked + .slider:before {
+#btnThemeChange:checked + .slider:before {
     transform: translateX(95%);
     box-shadow: inset 8px -4px 0px 0px var(--colorSecondary);
 }
@@ -186,47 +188,110 @@ main h3,h4{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 30px 1fr;
     place-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 .study h4{
     width: 100%;
     grid-column: 1/3;
 }
+.titleStudy{
+    width: 100%;
+    text-align: center;
+}
 .intermediary, .basic{
-    margin: auto;
+    width: 100%;
+    height: 100%;
     background-color: var(--colorTerciary);
     padding: 5px;
     border-radius: 2px;
     display: flex;
-    color: #334347;
+    flex-wrap: wrap;
+    color: var(--colorIcon);
     align-items: center;
-    gap: 2px;
+}
+.studyIcon{
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
 }
 .projectsContainer{
-    background-color: var(--colorTerciary);
     max-width: 100%;
     height: 100%;
-    /* display: flex; */
     overflow: hidden;
     position: relative;
 }
 .wrapper{
-    border: 10px solid aqua;
     width: 100%;
     height: 100%;
     margin: auto;
 }
-.sliderProject{
-    background-color: blueviolet;
+.inputNav{
+    margin: -10px auto;
     display: flex;
-    flex-flow:row nowrap;
-    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.inputNav input[type="radio"] {
+    appearance: none;
+    width: 30px;
+    height: 15px;
+    border: 3px solid var(--colorSecondary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.inputNav input[type="radio"]:checked{
+    background-color: var(--colorTerciary);
+}
+.sliderProject{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    transition: .3s;
 }
 .project{
-    width: 400px;
+    width: 100%;
     height: 100%;
+    padding: 10px;
+    border: 2px solid var(--colorTerciary);
+    border-radius: 10px ;
+}
+:root:has(#project1:checked){
+    .sp{
+        margin-left: 0%;
+    }
+}
+:root:has(#project2:checked){
+    .sp{
+        margin-left: -100%;
+    }
+}:root:has(#project3:checked){
+    .sp{
+        margin-left: -200%;
+    }
+}:root:has(#project4:checked){
+    .sp{
+        margin-left: -300%;
+    }
+}:root:has(#project5:checked){
+    .sp{
+        margin-left: -400%;
+    }
+}
+
+
+.inputNav:has(#project3:checked) ~ .sp{
     background-color: var(--colorSlider);
-    overflow: hidden;
-    object-fit: cover;
-    
+}
+
+#project1:checked ~ .sl{
+    margin-left: 0px;
+    color: black;
+}
+#project2:checked ~ .currentProject{
+    margin-left: -20%;
+}
+#project3:checked ~ .sp{
+    background-color: var(--colorTerciary);
+    margin-left: -40%;
 }

@@ -9,7 +9,7 @@
 <body>
     <header class="title">
         <div class="btnTheme">
-            <label class="switch" for="btnThemeChange">
+            <label class="switch" for="btnThemeChange"> 
                 <input type="checkbox" name="btnThemeChange" id="btnThemeChange">
                 <span class="slider"></span>
             </label>
@@ -51,21 +51,42 @@
             <div class="study">
                 <h4>Conhecimento</h4>
                 <div class="intermediary">
-                    <h5>Intermediário:</h5>
-                    <ion-icon class="icons" name="logo-html5"></ion-icon><p>HTML</p>
-                    <ion-icon class="icons" name="logo-css3"></ion-icon><p>CSS</p>
+                    <div class="titleStudy">
+                        <h5>Intermediário:</h5>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-html5"></ion-icon><p>HTML</p>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-css3"></ion-icon><p>CSS</p>
+                    </div>
                 </div>
                 <div class="basic">
-                    <h5>Básico:</h5>
-                    <div class="cIcon"><strong>c</strong></div><p>C</p>
-                    <ion-icon class="icons" name="logo-javascript"></ion-icon><p>Javascript</p>
-                    <ion-icon class="icons" name="logo-python"></ion-icon><p>Python</p>
+                    <div class="titleStudy">
+                        <h5>Básico:</h5>
+                    </div>
+                    <div class="studyIcon">
+                        <div class="cIcon"><strong>c</strong></div><p>C</p>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-javascript"></ion-icon><p>Javascript</p>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-python"></ion-icon><p>Python</p>
+                    </div>
                 </div>
             </div>
             <h3>Projetos</h3>
+            <div class="inputNav">
+                <input class="inputRadio" type="radio" name="projeto" id="project1" checked>
+                <input class="inputRadio" type="radio" name="projeto" id="project2">
+                <input class="inputRadio" type="radio" name="projeto" id="project3">
+                <input class="inputRadio" type="radio" name="projeto" id="project4">
+                <input class="inputRadio" type="radio" name="projeto" id="project5">
+            </div>
             <div class="projectsContainer">
                 <div class="wrapper">
-                    <div class="sliderProject">
+                    <div class="sliderProject sp">
                         <div class="project currentProject">
                             <h3>LEK'S Quiz</h3>
                             <div class="leksQuiz">
