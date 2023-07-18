@@ -237,17 +237,6 @@ main h3,h4{
     flex-wrap: nowrap;
     align-items: center;
 }
-.projectsContainer{
-    max-width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.wrapper{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
 .inputNav{
     margin: -10px auto;
     display: flex;
@@ -265,6 +254,17 @@ main h3,h4{
 }
 .inputNav input[type="radio"]:checked{
     background-color: var(--colorTerciary);
+}
+.projectsContainer{
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 .sliderProject{
     width: 500%;
