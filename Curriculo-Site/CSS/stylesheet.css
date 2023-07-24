@@ -10,7 +10,7 @@
     --colorPrimary:#F0EBDD;
     --colorSecondary:#334347;
     --colorTerciary: #C1AC71;
-    --colorSlider: #e7db36;
+    --colorSlider: #C1AC71;
     --letterLight:#334347;
     --letterDark:#F0EBDD;
     --colorIcon:#334347;
@@ -111,7 +111,7 @@ main{
     border-radius: 50%;
     left: 5%;
     bottom: 10%;
-    box-shadow: inset 15px -4px 0px 15px #fff000;
+    box-shadow: inset 15px -4px 0px 15px var(--colorSlider);
     transition: .5s;
 }
 #btnThemeChange:checked + .slider {
