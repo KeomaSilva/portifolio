@@ -286,7 +286,7 @@ main h3,h4{
     flex-wrap: wrap;
 }
 .logoLeks{
-    flex: 1 1 200px;
+    flex: 1 1 150px;
     overflow: hidden;
     aspect-ratio: 1;
 }
@@ -298,7 +298,6 @@ main h3,h4{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .leksContent{
     flex: 1 1 50%;
     min-width: 300px;
@@ -338,10 +337,14 @@ main h3,h4{
 .pictureConstrucion{
     width: 80%;
     margin: 5px auto;
+    display: grid;
+    place-items: center;
 }
 .contentConstruction img{
-    width: 100%;
-    aspect-ratio: 10/9;
+    width: 60%;
+    margin: auto;
+    aspect-ratio: 14/10;
+    object-fit: cover;
 }
 
 :root:has(#project1:checked){
