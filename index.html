@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="./CSS/stylesheet.css">
+</head>
+<body id="contatPerfil">
+    <nav class="cellphone">
+        <a class="labelNav" href="#contatPerfil"><strong>Perfil</strong></a></label>
+        <a class="labelNav" href="#projectPage"><strong>Projetos</strong></a></label>
+    </nav>
+    <header class="title">
+        <div class="btnTheme">
+            <label class="switch" for="btnThemeChange"> 
+                <input type="checkbox" name="btnThemeChange" id="btnThemeChange">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1>Keoma da Silva</h1>
+        <h3>Desenvolvedor Web Frontend</h3>
+    </header>
+    <aside class="contats">
+        <div class="picture">
+            <img src="./Img/WhatsApp Image 2023-07-05 at 21.41.16 (1).jpeg" alt="Foto-perfil">
+        </div>
+        <section class="perfilContent">
+            <div class="iconsContats">
+                <a href="http://www.linkedin.com/in/keoma-da-silva-227a6b265" target="_blank" rel="noopener noreferrer"><ion-icon class="icons linkedin" name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/KeomaSilva" target="_blank" rel="noopener noreferrer"><ion-icon class="icons github" name="logo-github"></ion-icon></a>
+                <p>dasilvakeoma@gmail.com</p>
+            </div>            
+            <div class="graduation">
+                <p>Graduando em Análise e Desenvolvimento de Sistemas</p>
+                <h4>Graduação</h4>
+                <p>Mestre em Biotecnologia</p>
+                <p>Bacharel e Licenciatura em Biologia</p>
+            </div>            
+            <div class="language">
+                <h4>Idiomas <ion-icon name="chatbubbles-outline"></ion-icon></h4>
+                <p>Português - Nativo</p><P>Inglês - Intermediário</P>
+            </div>
+        </section>        
+    </aside>
+    <main class="container">
+        <section class="about">
+            <div class="study">
+                <h4>Conhecimento</h4>
+                <div class="intermediary">
+                    <div class="titleStudy">
+                        <h5>Intermediário:</h5>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-html5"></ion-icon><p>HTML</p>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-css3"></ion-icon><p>CSS</p>
+                    </div>
+                </div>
+                <div class="basic">
+                    <div class="titleStudy">
+                        <h5>Básico:</h5>
+                    </div>
+                    <div class="studyIcon">
+                        <div class="cIcon"><strong>c</strong></div><p>C</p>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-javascript"></ion-icon><p>Javascript</p>
+                    </div>
+                    <div class="studyIcon">
+                        <ion-icon class="icons" name="logo-python"></ion-icon><p>Python</p>
+                    </div>
+                </div>
+            </div>
+            <h3 id="projectPage">Projetos</h3>
+            <div class="inputNav">
+                <input class="inputRadio" type="radio" name="projeto" id="project1" checked>
+                <input class="inputRadio" type="radio" name="projeto" id="project2">
+                <!-- <input class="inputRadio" type="radio" name="projeto" id="project3">
+                <input class="inputRadio" type="radio" name="projeto" id="project4">
+                <input class="inputRadio" type="radio" name="projeto" id="project5"> -->
+            </div>
+            <div class="projectsContainer">
+                <div class="wrapper">
+                    <div class="sliderProject sp">
+                        <div class="project currentProject">
+                            <h3>LEK'S Quiz</h3>
+                            <div class="leksQuiz">
+                                <div class="logoLeks">
+                                    <a href="https://keomasilva.github.io/leksquiz/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./Img/lek's.png" alt="LEK'S Quiz">
+                                    </a>
+                                </div>
+                                <div class="leksContent">
+                                    <p> O projeto LEK'S Quiz foi inicialmente pensado para uma tarefa da disciplina de Introdução às tecnologias. O grupo imaginou uma plataforma de quiz, com o intuíto de auxiliar os professores do ensino médio com atividade mais interativas com a tecnologia, e para os alunos que querem estudar ter outra ferramenta para a assimilação do conteúdo. Com isso foi criado uma HomePage para o site que seria para hospedar a plataforma de quiz.</p>
+                                    <div class="tecnology">
+                                        <ion-icon class="icons" name="logo-html5"></ion-icon>
+                                        <ion-icon class="icons" name="logo-css3"></ion-icon>
+                                        <ion-icon class="icons" name="logo-javascript"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <h3>Projeto 2</h3>
+                            <div class="2">
+                                <div class="contentConstruction">
+                                    <span>under construction</span>
+                                    <div class="pictureConstrucion">
+                                        <img src="./Img/construction-zone-with-workers_18591-54141.avif" alt="underConstruction">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="project">3</div>
+                        <div class="project">4</div>
+                        <div class="project">5</div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="./JS/scrit.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/8daf915ec6.js" crossorigin="anonymous"></script>
+</body>
+</html>
